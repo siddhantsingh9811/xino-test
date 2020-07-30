@@ -1,0 +1,46 @@
+body{
+	
+
+}
+.cont
+{
+    position: absolute;
+    width: 80vw;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    margin: 0;
+    font-size: 20px;
+    font-family: Cera Pro;
+}
+.l
+{
+    display: inline-block;
+    width: 30vw;
+    margin-top: 5vh;
+    float: left;
+}
+.r
+{
+    display: inline-block;
+    margin-top: 5vh;
+    
+    width: 40vw;
+    
+}
+.e,.d
+{
+    display: inline-block;
+}
+.e
+{
+    width: 8vw;
+}
+.d
+{
+    font-weight: lighter;
+}
+.po
+{
+    margin-bottom: 20px; 
+}

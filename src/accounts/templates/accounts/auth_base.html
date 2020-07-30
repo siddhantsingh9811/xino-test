@@ -1,0 +1,108 @@
+{% extends "base.html" %}
+
+{% load crispy_forms_tags %}
+{% load staticfiles %}
+{% block navbar %}
+{% endblock %}
+{% block styles%}
+<link rel="stylesheet" type="text/css" href="{% static 'site/css/index.css' %}">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+{% endblock %}
+{% block container %}
+<style type="text/css">
+	@font-face {
+	font-family: Cera Pro;
+	src: url(fonts/cp_black_italic.otf);
+	font-weight: bolder;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: Cera Pro;
+	src: url(fonts/cp_black.otf);
+	font-weight: bolder;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: Cera Pro;
+	src: url(fonts/cp_bold_italic.otf);
+	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: Cera Pro;
+	src: url(fonts/cp_bold.otf);
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: Cera Pro;
+	src: url(fonts/cp_regular.otf);
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: Cera Pro;
+	src: url(fonts/cp_light_italic.otf);
+	font-weight: lighter;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: Cera Pro;
+	src: url(fonts/cp_light.otf);
+	font-weight: lighter;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: Cera Pro;
+	src: url(fonts/cp_medium_italic.otf);
+	font-weight: 400;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: Cera Pro;
+	src: url(fonts/cp_medium.otf);
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: Cera Pro;
+	src: url(fonts/cp_thin_italic.otf);
+	font-weight: 300;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: Cera Pro;
+	src: url(fonts/cp_thin.otf);
+	font-weight: 300;
+	font-style: normal;
+}
+
+html, body {
+	transition: all .3s ease;
+}
+
+body{
+	font-family: 'Cera Pro',sans-serif;
+}
+</style>
+<div class="container form-box">
+  <div class="text-center">
+    <h2>{% block form_heading %}{% endblock %}</h2>
+  </div>
+  {% block form %}
+  {% endblock %}
+</div>
+
+{% endblock container %}
+

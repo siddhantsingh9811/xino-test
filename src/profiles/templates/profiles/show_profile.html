@@ -1,0 +1,64 @@
+{% extends "index.html" %}
+
+{% load staticfiles %}
+
+{% block head %}
+<link rel="stylesheet" type="text/css" href="{% static 'site/css/prof.css' %}">
+<style type="text/css">
+  .footer{
+    visibility: hidden;
+  }
+</style>
+{% endblock %}
+
+{% block body %}
+<div class="cont">
+  <div class="t1" style="font-size: 50px;">
+
+    {{ show_user.get_full_name }}
+  </div>
+  {% if editable %}
+
+  <a href="{% url 'profiles:edit_self' %}" class="event-details-btn">
+    <div class="button2" style="margin: 0; margin-top: 20px;">Register</div>
+  </a>
+
+  {% endif %}
+
+
+  <div class="l">
+    <h3>Profile</h3>
+    <div class="po">
+      <div class="e">Email</div>
+      <div class="d">{{ show_user.email|default:"missing" }}</div>
+    </div>
+    <div class="po">
+      <div class="e">Joined</div>
+      <div class="d">{{ show_user.date_joined }}</div>
+    </div>
+    <div class="po">
+      <div class="e">Last Seen</div>
+      <div class="d">{{ show_user.last_login }}</div>
+    </div>
+    
+  </div>
+  <div class="r">
+    <h3>Discord Details</h3>
+    Please tell all the participants to join XINO's discord server via the link <a href="https://discord.io/xino">https://discord.io/xino</a> . <br>
+        Upon entering please verify yourself using the bot through the command: <br> <br>
+        <code style="color: white;background-color: #333; padding: 5px; border-radius: 5px;">@verify {{ show_user.profile.slug }}</code>
+  </div>
+</div>
+
+
+
+
+{% endblock %}
+
+
+
+<strong>Email:</strong></span> {{ show_user.email|default:"missing" }}
+
+<strong>Joined</strong></span> {{ show_user.date_joined }}</li>
+
+{{ show_user.get_full_name }}'s Profile

@@ -1,0 +1,327 @@
+{% extends "index.html" %}
+
+{% load staticfiles %}
+{% load crispy_forms_tags %}
+
+{% block body %}
+<div class="section1">
+		<div class="left">
+			<div class="maintext">
+				XINO 2020
+			</div>
+			
+			<div class="smalltext">
+				Extreme Innovation
+			</div>
+			<div class="h2">
+				<a href="#events" class="event-details-btn"><div class="button2">Event Details</div></a>
+			</div>
+		</div>
+		<div class="right">
+			<img src="{% static 'site/img/workspace2.jpg' %}" class="resize">
+		</div>
+	</div>
+	
+	
+	
+	<div class="section3">
+		<div class="heading2">Who are we?</div>
+		<div class="subheading2">A bunch of technology enthusiasts</div>
+		<div class="longtext">
+			XINO, the computer club of DPS Rohini comprises of die hard fanatics of technology whose passion for the technological science verges on borderline crazy. We comprise of 25+ brilliant minds, each posessing a unique perspective of analysing the world around us.<br><br>
+			
+			
+			"When all think alike, then no one is thinking." We value different ideas, dreams and aspirations of our members and work our best to turn those dreams into reality. "It isn't the incompetent who destroy an organization. The incompetent never get in a position to destroy it. It is those who achieved something and want to rest upon their achievements who are forever clogging things up". We appreciate our achievements but never stop our crusade to acheive long lasting glory in the field of technological sciences. We have taken the competition scene in Delhi by storm, winning innummerable events but never letting it get in our way of learning.
+		</div>
+		
+		
+	</div>
+	
+	<div class="section4">
+		<div class="heading2">Meet Our Team</div>
+		<div class="subheading2">The people who make it happen</div>
+		
+		<div class="members">
+			
+			
+			<div class="mem">
+				<img src="{% static 'site/img/members/Siddhant.jpg' %}">
+				<h4>Siddhant Singh</h4>
+				<div class="viewer">
+					<p>President</p>
+					<p>Developer</p>
+				</div>
+			</div>
+			<div class="mem">
+				<img src="{% static 'site/img/members/Pranjal.jpg' %}">
+				<h4>Pranjal Tiwari </h4>
+				<div class="viewer">
+					<p>President</p>
+					<p>Crossword</p>
+				</div>
+			</div>
+			<div class="mem">
+				<img src="{% static 'site/img/members/Harsh.jpg' %}">
+				<h4>Harsh Pruthi</h4>
+				<div class="viewer">
+					<p>Vice President</p>
+					<p>A/V Editor</p>
+				</div>
+			</div>
+			<div class="mem">
+				<img src="{% static 'site/img/members/Nikita.jpg' %}">
+				<h4>Nikita Agarwal </h4>
+				<div class="viewer">
+					<p>Vice President</p>
+					<p>Designer</p>
+				</div>
+			</div>
+			<div class="mem">
+				<img src="{% static 'site/img/members/Shaurya.jpg' %}">
+				<h4>Shaurya Bajaj</h4>
+				<div class="viewer">
+					<p>Secretary</p>
+					<p>Quizzer</p>
+				</div>
+			</div>
+			<div class="mem">
+				<img src="{% static 'site/img/members/Manit.jpg' %}">
+				<h4>Manit Kaushik</h4>
+				<div class="viewer">
+					<p>Secretary</p>
+					<p>Quizzer</p>
+				</div>
+			</div>
+			<div class="mem">
+				<img src="{% static 'site/img/members/Kushagra.jpg' %}">
+				<h4>Kushagra Gupta</h4>
+				<div class="viewer">
+					<p>Head Programming</p>
+					<p>Programmer</p>
+				</div>
+			</div>
+			<div class="mem">
+				<img src="{% static 'site/img/members/Shaunak.jpg' %}">
+				<h4>Shaunak Sachdev</h4>
+				<div class="viewer">
+					<p>Head Quiz</p>
+					<p>Quizzer</p>
+				</div>
+			</div>
+			
+			<div class="mem">
+				<img src="{% static 'site/img/members/Ankur.jpeg' %}">
+				<h4>Ankur Pandey</h4>
+				<div class="viewer">
+					<p>Head AV</p>
+					<p>A/V Editor</p>
+				</div>
+			</div>
+			<div class="mem">
+				<img src="{% static 'site/img/members/Moaksh.jpg' %}">
+				<h4>Moaksh Kakar</h4>
+				<div class="viewer">
+					<p>Head Design</p>
+					<p>Designer</p>
+				</div>
+			</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="section5">
+		<div class="numbers">
+			<div class="number">
+				<div class="green">400+</div>
+				<div class="btext">Participants</div>
+			</div>
+			<div class="number">
+				<div class="green">20+</div>
+				<div class="btext">Participating Schools</div>
+			</div>
+			<div class="number">
+				<div class="green">7</div>
+				<div class="btext">Events</div>
+			</div>
+		</div>
+		<div id="events"></div>
+	</div>
+	
+	<div class="section6">
+		<div class="heading2">The Events</div>
+		<div class="subheading2">The crux of XINO 2020</div>
+		
+		<div class="boxes">
+			<div class="box">
+				<img src="{% static 'site/img/hackathon.png' %}">
+				<div class="econt">
+					<div class="eheads">EXQUISITE<div class="button b1" style="display: inline-block;float: right;"><a href="" style="color: white;">Details</a></div></div>
+					<div class="subhead">Hackathon</div>
+
+					<div class="etext">
+						This event was conceptualized for those who wish to be forerunners in this generation of technology. The preliminary submissions will be judged on the quality of the product and its functionality. After submission based online prelims, top 6-8 teams will make it to the onsite finals. The qualifying teams will also have to pitch their product to a panel of judges.
+						<br><br>
+						
+					</div>
+					<div class="det"><span class="bold">CATEGORY:</span> OPEN</div>
+					<div class="det"><span class="bold">NUMBER OF PARTICIPANTS:</span> 3</div>
+					<div class="det"><span class="bold">NUMBER OF TEAMS:</span> 1</div>
+				</div>
+			</div>
+			<div class="box">
+				<img src="{% static 'site/img/quiz.png' %}">
+				<div class="econt">
+					<div class="eheads">TECH EXULT<div class="button b1" style="display: inline-block;float: right;"><a href="" style="color: white;">Details</a></div></div>
+					<div class="subhead">Quizzing</div>
+					<div class="etext">
+						We invite all curious enthusiasts to battle it out in this grueling quest for supremacy. In this closely fought battle, the quiz isn't over till it's over. Top six teams that qualify the written prelims will battle it out in the stage round.
+						<br><br>
+					</div>
+					<div class="det"><span class="bold">CATEGORY:</span> OPEN</div>
+					<div class="det"><span class="bold">NUMBER OF PARTICIPANTS:</span> 1</div>
+					<div class="det"><span class="bold">NUMBER OF TEAMS:</span> 2</div>
+				</div>
+			</div>
+			<div class="box">
+				<img src="{% static 'site/img/cross.png' %}">
+				<div class="econt">
+					<div class="eheads">X-WORD<div class="button b1" style="display: inline-block;float: right;"><a href="" style="color: white;">Details</a></div></div>
+					<div class="subhead">Crossword</div>
+					<div class="etext">
+						<i>"Think out of the box but inside the grid."</i>
+						<br><br>
+						Top six teams that qualify the written prelims will battle it out in the stage round.
+						<br><br>
+					</div>
+					<div class="det"><span class="bold">CATEGORY:</span> OPEN</div>
+					<div class="det"><span class="bold">NUMBER OF PARTICIPANTS:</span> 2</div>
+					<div class="det"><span class="bold">NUMBER OF TEAMS:</span> 2</div>
+				</div>
+			</div>
+			
+			<div class="box">
+				<img src="{% static 'site/img/programming.png' %}">
+				<div class="econt">
+					<div class="eheads">EXECUTE>EXE<div class="button b1" style="display: inline-block;float: right;"><a href="" style="color: white;">Details</a></div></div>
+					<div class="subhead">Programming</div>
+					<div class="etext">
+						After an online preliminary contest, top 8 teams will make it to the onsite finals.
+						The preliminary round will take place on 15 July 2019 from 6 PM - 8 PM IST. A maximum of two teams per school can qualify for the on-site finals.<br><br>
+					</div>
+					<div class="det"><span class="bold">LANGUAGES ALLOWED (ON-SITE):</span>  C++, Python</div>
+					<div class="det"><span class="bold">CATEGORY:</span> OPEN</div>
+					<div class="det"><span class="bold">NUMBER OF PARTICIPANTS:</span> 1</div>
+					<div class="det"><span class="bold">NUMBER OF TEAMS:</span> 1</div>
+				</div>
+			</div>
+			
+			<div class="box">
+				<img src="{% static 'site/img/surprise.png' %}">
+				<div class="econt">
+					<div class="eheads">EXCLUSIVE<div class="button b1" style="display: inline-block;float: right;"><a href="" style="color: white;">Details</a></div></div>
+					<div class="subhead">Surprise</div>
+					<div class="etext">
+						We would tell you to expect the unexpected, but that would be too mainstream.
+						<br><br>
+						The battle is on, soldier.<br><br>
+					</div>
+					<div class="det"><span class="bold">CATEGORY:</span> OPEN</div>
+					<div class="det"><span class="bold">NUMBER OF PARTICIPANTS:</span> 2</div>
+					<div class="det"><span class="bold">NUMBER OF TEAMS:</span> 2</div>
+				</div>
+			</div>
+
+			<div class="box" id="osmarathon">
+				<img src="{% static 'site/img/hardware.png' %}">
+				<div class="econt">
+					<div class="eheads">X-86<div class="button b1" style="display: inline-block;float: right;"><a href="" style="color: white;">Details</a></div></div>
+					<div class="subhead">Hardware</div>
+					<div class="etext">
+						Overlock your cells and ryze up to the challenge. <br> The event will consist of multiple online rounds which will test your depth in various categories.
+
+						<br><br>
+					</div>
+					<div class="det"><span class="bold">CATEGORY:</span> OPEN</div>
+					<div class="det"><span class="bold">NUMBER OF PARTICIPANTS:</span> 1</div>
+					<div class="det"><span class="bold">NUMBER OF TEAMS:</span> 1</div>
+				</div>
+			</div>
+
+			<div class="box" id="osmarathon">
+				<img src="{% static 'site/img/osmarathon.png' %}">
+				<div class="econt">
+					<div class="eheads">X-QUEST<div class="button b1" style="display: inline-block;float: right;"><a href="" style="color: white;">Details</a></div></div>
+					<div class="subhead">Cryptic Hunt</div>
+					<div class="etext">
+						Life is a maze <br> An online quest where participants are pitted against eachother in a race to unravel clues and solve levels
+						<br><br>
+					</div>
+					<div class="det"><span class="bold">CATEGORY:</span> OPEN</div>
+					<div class="det"><span class="bold">NUMBER OF PARTICIPANTS:</span> ∞</div>
+					<div class="det"><span class="bold">NUMBER OF TEAMS:</span> ∞</div>
+				</div>
+			</div>
+			<div class="box" id="osmarathon">
+				<img src="{% static 'site/img/photo.png' %}">
+				<div class="econt">
+					<div class="eheads">PIXELS<div class="button b1" style="display: inline-block;float: right;"><a href="" style="color: white;">Details</a></div></div>
+					<div class="subhead">Photography</div>
+					<div class="etext">
+						Life is a maze <br> An online quest where participants are pitted against eachother in a race to unravel clues and solve levels
+						<br><br>
+					</div>
+					<div class="det"><span class="bold">CATEGORY:</span> OPEN</div>
+					<div class="det"><span class="bold">NUMBER OF PARTICIPANTS:</span> 2</div>
+					<div class="det"><span class="bold">NUMBER OF TEAMS:</span> 2</div>
+				</div>
+			</div>
+			<div class="box" id="osmarathon">
+				<img src="{% static 'site/img/photo.png' %}">
+				<div class="econt">
+					<div class="eheads">X-VISION<div class="button b1" style="display: inline-block;float: right;"><a href="" style="color: white;">Details</a></div></div>
+					<div class="subhead">AV</div>
+					<div class="etext">
+						“People have forgotten how to tell a story. Stories don’t have a middle or an end any more. They usually have a beginning that never stops beginning.” Editing feels almost like sculpting or a form of continuing the writing process.
+						<br><br>
+					</div>
+					<div class="det"><span class="bold">CATEGORY:</span> OPEN</div>
+					<div class="det"><span class="bold">NUMBER OF PARTICIPANTS:</span> 1</div>
+					<div class="det"><span class="bold">NUMBER OF TEAMS:</span> 2</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	
+	<div class="section7">
+		<div class="heading2">Our Alumni </div>
+		<div class="subheading2">Our Pillars of Inspiration</div>
+		<div class="batch">Batch 2019-2020</div>
+		
+		<div class="alum">
+			<div class="al">
+				<div class="names">Sayam Kanwar</div>
+				<div class="post">President</div>
+			</div>
+			
+			<div class="al">
+				<div class="names">Vanshaj Vohra</div>
+				<div class="post">President</div>
+			</div>
+			<div class="al">
+				<div class="names">Parth Mahendru</div>
+				<div class="post">Head GD</div>
+			</div>
+			
+			<div class="al">
+				<div class="names">Radhika Marwaha</div>
+				<div class="post">Head Photography</div>
+			</div>
+			
+			
+		</div>
+		<div class="fu">
+			<a href="{% url 'alumni' %}"><div class="button2 b">View All </div></a>
+		</div>
+	</div>
+{% endblock %}

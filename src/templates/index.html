@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+{% load staticfiles %}
+<head>
+	<title>{% block title %} {% endblock %}</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'site/css/index.css' %}">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	{% block head %}
+	{% endblock %}
+</head>
+<body>
+	<div class="topbar">
+		<div class="h">
+			{% if not user.is_authenticated %}
+			<a href="{% url 'accounts:signup' %}"><div class="button b2">Sign Up</div></a>
+			<a href="{% url 'accounts:login' %}"><div class="button b1">Log In</div></a>
+			{% else %}
+			<label class="dropdown">
+				<div class="dd-button">
+					{{ user.get_full_name|truncatechars:20 }}
+					
+				</div>
+
+				<input type="checkbox" class="dd-input" id="test">
+
+				<ul class="dd-menu">
+					<li><a href="{% url 'profiles:show_self' %}">Account</a> </li>
+					<li><a href="{% url 'accounts:logout' %}">Logout</a></li>
+					
+					
+				</ul>
+
+			</label>
+			{% endif %}
+
+			
+			
+			<img src="{% static 'site/ico/logo.png' %}" alt="logo" class="im" style="cursor: pointer;">
+			
+		</div>
+	</div>
+	{% block messages %}
+	{% if messages %}
+	{% for message in messages %}
+	<div class="alert alert-{{ message.tags }}">  <!-- singular -->
+		<a class="close" data-dismiss="alert">×</a>
+		{{ message|safe }}
+	</div>
+	{% endfor %}
+	{% endif %}
+	{% endblock %}
+	{% block body %}
+	
+	{% endblock %}
+	
+	<div class="footer">
+		<img src="{% static 'site/img/LogoFull.png' %}">
+		<br>
+		<div class="social">
+			<a href="https://www.facebook.com/XINO.DPSR/"><li><img src="{% static 'site/img/fb.png' %}"></li></a>
+			<a href="mailto:xino@dpsrohini.com"><li><img src="{% static 'site/img/mail.png' %}"></li></a>
+			<a href="tel:011 2705 5942"><li><img src="{% static 'site/img/call.png' %}"></li></a>
+		</div>
+	</div>
+	<script type="text/javascript">
+		$(document).scroll(function () {
+			var $nav = $(".topbar");
+			$nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+		});
+		$(document).ready(function(){
+			$(".event-details-btn").on('click', function(event) {
+				if (this.hash !== "") {
+					event.preventDefault();
+					var hash = this.hash;
+					$('html, body').animate({
+						scrollTop: $(hash).offset().top
+					}, 800, function(){
+					});
+				}
+			});
+			$('.im').click(function(){
+				window.location.href="{% url 'home' %}";
+			})
+		});
+	</script>
+	{% block script %}
+	{% endblock %}
+</body>
+</html>

@@ -1,0 +1,45 @@
+{% extends "index.html" %}
+
+{% load staticfiles %}
+
+{% block head %}
+<style type="text/css">
+	.co
+	{
+		width: 50vw;
+		position: absolute;
+		left: 50vw;
+		transform: translateX(-50%);
+	}
+	.ar
+	{
+		padding: 20px;
+		
+		box-shadow: 5px 5px 20px 0 rgba(20,20,20,0.09);
+		background-color: #ececec;
+	}
+	.footer
+	{
+		visibility: hidden;
+	}
+</style>
+
+{% endblock %}
+
+{% block body %}
+<div class="heading2" style="font-size: 50px; margin-top: 100px; margin-bottom: 5vh; ">Announcements</div>
+<div class="co">
+	
+{% for post in posts %}
+        <div class="ar">
+        	<h1 style="margin: 0;">{{ post.title }}</h1>
+        	<p style="float: left; text-align: left; font-size: 15px; margin: 0;">{{ post.date_posted }}</p>
+        	<br>
+        	<br>
+        	{{ post.content }}
+        	
+        </div>
+    {% endfor %}
+
+{% endblock%}
+</div>

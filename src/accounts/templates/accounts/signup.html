@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+{% load staticfiles %}
+{% load crispy_forms_tags %}
+<head>
+	<title>Sign Up</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'site/css/signup.css' %}">
+</head>
+<body>
+	<div class="box"></div>
+	<div class="form-cont">
+		
+		{% crispy form %}
+
+	</div>
+	<center>
+		
+		<div class="form-message">
+			<p>
+				Already signed up? <a href="{% url 'accounts:login' %}">Log in</a>.
+			</p>
+		</div>
+	</center>
+</body>
+</html>
+
+
+
+
+
+
+

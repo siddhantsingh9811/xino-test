@@ -1,0 +1,44 @@
+{% extends "index.html" %}
+
+{% load staticfiles %}
+{% load crispy_forms_tags %}
+{% block head %}
+<link rel="stylesheet" type="text/css" href="{% static 'site/css/edit.css' %}">
+<style type="text/css">
+  .footer{
+    visibility: hidden;
+  }
+  .button2
+  {
+    float: left;
+    margin: 0;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+</style>
+{% endblock %}
+
+
+<!-- Benefits of the Django application -->
+{% block body %}
+
+<div class="cont">
+  <div class="t1" style="font-size: 50px;">
+
+    Register
+  </div>
+{% crispy user_form %}
+{% crispy profile_form %}
+<div class="button2" style="float: right; background-color: #1397e2; box-shadow: 0px 3px 9px 0 #1397e2; " >
+  
+  <a style="color: white;" href="{% url 'accounts:password-change' %}">Change Password</a>
+</div>
+
+</div>
+
+{% endblock %}
+
+
+
+
+

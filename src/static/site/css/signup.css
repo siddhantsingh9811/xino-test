@@ -1,0 +1,155 @@
+ @font-face {
+        font-family: Cera Pro;
+        src: url(fonts/cp_black_italic.otf);
+        font-weight: bolder;
+        font-style: italic;
+    }
+    
+    @font-face {
+        font-family: Cera Pro;
+        src: url(fonts/cp_black.otf);
+        font-weight: bolder;
+        font-style: normal;
+    }
+    
+    @font-face {
+        font-family: Cera Pro;
+        src: url(fonts/cp_bold_italic.otf);
+        font-weight: bold;
+        font-style: italic;
+    }
+    
+    @font-face {
+        font-family: Cera Pro;
+        src: url(fonts/cp_bold.otf);
+        font-weight: bold;
+        font-style: normal;
+    }
+    
+    @font-face {
+        font-family: Cera Pro;
+        src: url(fonts/cp_regular.otf);
+        font-weight: normal;
+        font-style: normal;
+    }
+    
+    @font-face {
+        font-family: Cera Pro;
+        src: url(fonts/cp_light_italic.otf);
+        font-weight: lighter;
+        font-style: italic;
+    }
+    
+    @font-face {
+        font-family: Cera Pro;
+        src: url(fonts/cp_light.otf);
+        font-weight: lighter;
+        font-style: normal;
+    }
+    
+    @font-face {
+        font-family: Cera Pro;
+        src: url(fonts/cp_medium_italic.otf);
+        font-weight: 400;
+        font-style: italic;
+    }
+    
+    @font-face {
+        font-family: Cera Pro;
+        src: url(fonts/cp_medium.otf);
+        font-weight: 400;
+        font-style: normal;
+    }
+    
+    @font-face {
+        font-family: Cera Pro;
+        src: url(fonts/cp_thin_italic.otf);
+        font-weight: 300;
+        font-style: italic;
+    }
+    
+    @font-face {
+        font-family: Cera Pro;
+        src: url(fonts/cp_thin.otf);
+        font-weight: 300;
+        font-style: normal;
+    }
+
+  body{
+	margin:0;
+	padding:0;
+	background: #FAFAFE;
+	overflow: hidden;
+    font-family: 'Cera Pro',sans-serif;
+    font-weight: 100;
+
+}
+.box {
+  width: 100vw;
+  height: 100vh;
+  background-color: #34D0B3;
+  clip-path: polygon(0 0, 0% 100%, 100% 0);
+
+}
+form{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	width:400px;
+	height:410px;
+	padding: 10px 25px 50px 25px;
+	border: none;
+  	background-color: white;
+  	box-shadow: 5px 5px 20px 0 rgba(20,20,20,0.09);
+	    font-family: 'Cera Pro',sans-serif;
+
+	font-size:20px;
+    }
+
+  form input{
+ 	border:none;
+ 	border-bottom: 1px solid #34D0B3;
+ 	outline: none;
+ 	font-size: 15px;
+ 	padding: 10px 0px 5px 10px;
+ }
+ 
+
+.h{
+	font-size: 35px;
+	padding-top: 10px;
+}
+.form-message{
+	transform: translateY(-200%);
+
+}
+#submit-id-sign_up{
+	padding-right: 18px;
+	padding-left: 18px;
+	padding-bottom: 10px;
+	background:#34D0B3;
+    border-radius: 100px;
+    box-shadow: 0px 3px 9px 0 #34D0B3;
+    color:white;
+    cursor: pointer;
+
+}
+a{
+	color:#34D0B3;
+}
+.help-block{
+	font-family: Cera Pro;
+        src: url(fonts/cp_light.otf);
+        font-weight: lighter;
+        font-style: normal;
+        font-size: 15px;
+        text-align: center;
+}
+.form-group{
+	padding-top: 20px;
+}
+.btn{
+
+} 
+
