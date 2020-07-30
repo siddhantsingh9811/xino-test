@@ -1,0 +1,43 @@
+body
+{
+	margin: 0;
+	font-size: 20px;
+	font-family: Cera Pro;
+}
+
+.cont
+{
+    position: absolute;
+    width: 80vw;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+}
+.control-label
+{
+	display: inline-block;
+	width: 10vw;
+	padding: 10px;
+}
+.controls
+{
+	display: inline-block;
+	margin-left: 20px;
+	font-weight: lighter;
+}
+input
+{
+	border:none;
+  border-bottom:1px solid #34D0B3;
+}
+input:focus
+{
+	border:none;
+  border-bottom:1px solid #34D0B3;
+  outline: none;
+}
+
+.gg
+{
+	color: #34D0B3;
+}

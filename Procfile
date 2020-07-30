@@ -1,1 +1,1 @@
-web: gunicorn src.xino.wsgi.py 
+web: gunicorn xino.wsgi
